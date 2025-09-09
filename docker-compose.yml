@@ -1,8 +1,6 @@
-version: "3.8"
-
 services:
   web:
-    image: manesankett/ci-cd-mini-project:latest
+    image: sanket00069/ci-cd-mini-project:latest
     ports:
-      - "5000:5000"
+      - "5001:5000"   # host:container
     restart: always
