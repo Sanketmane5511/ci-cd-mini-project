@@ -2,7 +2,7 @@ pipeline {
     agent any
 
     environment {
-        IMAGE_NAME = "manesankett/ci-cd-mini-project"
+        IMAGE_NAME = "sanket00069/ci-cd-mini-project"
     }
 
     stages {
@@ -21,7 +21,7 @@ pipeline {
 
         stage('Push to Docker Hub') {
             steps {
-                bat "docker login -u manesankett@gmail.com -p Pass@1234"
+                bat "docker login -u sanket00069 -p Pass@1234"
                 bat "docker push %IMAGE_NAME%:latest"
             }
         }
